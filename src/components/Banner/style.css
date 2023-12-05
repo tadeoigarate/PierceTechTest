@@ -1,0 +1,41 @@
+.bannerConteiner{
+    position: relative;
+}
+
+.bannerConteiner img {
+    width: 100%;
+    min-width: 100%;
+}
+
+.puntos {
+    display: flex;
+    position: absolute;
+    list-style: none;
+    bottom: 19px;
+    width: 100%;
+    justify-content: center;   
+}
+.punto{
+    width: 10px;
+    height: 10px;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    border: 1.5px solid #ffffff;
+    margin-right: 21px;
+}
+
+.active{
+    background-color: #ffffff;
+}
+
+@media (max-width: 1439px) {
+
+    .punto{
+        width: 8px;
+        height: 8px
+    }
+
+    .puntos{
+        bottom: 4vw; 
+    }
+  }
