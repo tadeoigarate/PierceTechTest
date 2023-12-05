@@ -5,6 +5,8 @@ import "./style.css";
 export const TopFooter = () => {
   return (
     <div className="topFooterConteiner">
+      <div className="topFooterConteinerFixes">
+
       {topFooterData.map((elem, index) => (
         <TopFooterCard
         key={index}
@@ -13,8 +15,9 @@ export const TopFooter = () => {
         textConteiner={"textConteiner"}
         titleTopFooter={"titleTopFooter"}
         subTitleTopFooter={"subTitleTopFooter"}
-      />
-      ))}
+        />
+        ))}
+        </div>
     </div>
   );
 };

@@ -9,18 +9,17 @@ import { TopFooter } from "../components/TopFooter/TopFooter";
 import bannerImage from "../assets/image/banner.png";
 import bannerMobileImage from "../assets/image/bannerMobile.png";
 import { HeaderMobile } from "../components/Header/HeaderMobile/HeaderMobile";
-// import { MenuMobile } from "../components/MenuMobile/MenuMobile";
 import { MobileCarrousel } from "../components/Carrousel/MobileCarrousel/MobileCarrousel";
 import { MobileCategory } from "../components/PopularCategory/MobileCategory/MobileCategory";
 import { TopFooterMobile } from "../components/TopFooter/TopFooterMobile";
 import { FooterMobile } from "../components/Footer/FooterMobile";
 
 export const HomeScreen = () => {
-  const [desktop, setDesktop] = useState(window.innerWidth > 1440);
+  const [desktop, setDesktop] = useState(window.innerWidth > 1439);
 
   useEffect(() => {
     const handleResize = () => {
-      setDesktop(window.innerWidth > 1440);
+      setDesktop(window.innerWidth > 1439);
     };
 
     window.addEventListener("resize", handleResize);
@@ -33,15 +32,15 @@ export const HomeScreen = () => {
   console.log(desktop);
 
   return (
-    <>
+    <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
       {!desktop ? <HeaderMobile /> : <Header />}
 
       <Banner bannerImage={desktop ? bannerImage : bannerMobileImage} />
 
       {!desktop ? (
-        <MobileCarrousel title={"TENDENCIAS"} classNameLiActive={"active"} />
+        <MobileCarrousel title={"TENDENCIAS"} classNameLiActive={"active"} backGround={{background:"#dc1e0f"}}  />
       ) : (
-        <DesktopCarrousel title={"TENDENCIAS"} />
+        <DesktopCarrousel title={"TENDENCIAS"} backGround={{background:"#dc1e0f"}} />
       )}
 
       {!desktop ? <MobileCategory /> : <PopularCategory />} 
@@ -65,6 +64,6 @@ export const HomeScreen = () => {
       {!desktop ? <TopFooterMobile /> : <TopFooter />} 
 
       {!desktop ? <FooterMobile /> : <Footer />} 
-    </>
+    </div>
   );
 };

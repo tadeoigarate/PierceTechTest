@@ -1,89 +1,104 @@
-.topFooterConteiner{
-    display: flex;
-    margin-top: 80px;
-    background-color: #ECECEC;
-    justify-content: space-between;
-    padding: 40px 150px
-    }
-
-.footerCardConteiner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 263px;
-}
-.textConteiner{
-    margin: 6px;
+.topFooterConteiner {
+  background-color: #ececec;
+  width: 100%;
+  max-height: 261px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
 }
 
-.titleTopFooter{
-    font-size: 18px;
-    font-family: 'Rubik';
-    font-weight: 700;
-    line-height: 22px;
-    text-align: center;
-    margin-top: 10px;
+.topFooterConteinerFixes {
+  max-width: 1440px;
+  width: 100%;
+  padding: 40px 10%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.subTitleTopFooter{
-    font-size: 16px;
-    font-family: 'Rubik';
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    color: #3C3C3B;
+.footerCardConteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 263px;
+  max-height: 171.08px;
+  gap: 24px;
 }
 
-
-
-
-
-.topFooterConteinerMobile{
-    display: flex;
-    background-color: #ECECEC;
-    flex-direction: column;
-    padding-top: 32px 0 16px;
-    }
-    
-
-.footerCardConteinerMobile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.textConteinerMobile{
-    margin: 16px;
-    max-width: 264px;
+.texConteiner {
+  gap: 2px;
 }
 
-.titleTopFooterMobile{
-    font-family: 'Rubik';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0px;
-    text-align: center;
-    
+.titleTopFooter {
+  font-size: 18px;
+  font-family: "Rubik";
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
 }
 
-.subTitleTopFooterMobile{
-    font-family: 'Rubik';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0px;
-    text-align: center;    
-    color: #3C3C3B;
+.subTitleTopFooter {
+  font-size: 16px;
+  font-family: "Rubik";
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #3c3c3b;
 }
 
-.cardsContainer{
-    height: auto;
-    width: 300%;
-    display: flex;
-    flex-flow: row nowrap;
-    transition: all 0.4s ease;
-    border-radius: 1em;
-    transition: all 0.5s ease;
-    transform: translateX(0%);
+.topFooterConteinerMobile {
+  display: flex;
+  align-items: center;
+  background-color: #ececec;
+  flex-direction: column;
+  padding-top: 32px 0 16px;
+  width: 100%;
+}
+
+.topFooterConteinerMobile img {
+  margin-top: 40px;
+}
+
+.footerCardConteinerMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.textConteinerMobile {
+  /* margin: 16px; */
+  margin-top: 24px;
+  margin-bottom: 12.92px;
+  max-width: 264px;
+  display: grid;
+  gap: 6px;
+}
+
+.titleTopFooterMobile {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.subTitleTopFooterMobile {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #3c3c3b;
+}
+
+.cardsContainer {
+  height: auto;
+  width: 300%;
+  display: flex;
+  flex-flow: row nowrap;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
 }

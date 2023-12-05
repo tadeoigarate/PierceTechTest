@@ -1,5 +1,6 @@
 .categoryMobileConteiner{
     padding: 16px 0;
+    margin-top: 40px    ;
 }
 
 .categoryImageMobile {
@@ -34,7 +35,7 @@ margin: 0 16px;
 }
 
 .conteinerBig{
-    max-width: 360px;
+    max-width: 100vw;
     overflow: hidden;
 }
 

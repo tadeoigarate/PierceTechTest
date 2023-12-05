@@ -1,3 +1,10 @@
+.backColorMobile{
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
 .mobileCarrouselConteiner {
   margin: 32px 0;
   background-color: #dc1e0f;

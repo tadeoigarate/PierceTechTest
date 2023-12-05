@@ -4,13 +4,14 @@
 
 .bannerConteiner img {
     width: 100%;
+    min-width: 100%;
 }
 
 .puntos {
     display: flex;
     position: absolute;
     list-style: none;
-    bottom: 2vw;
+    bottom: 19px;
     width: 100%;
     justify-content: center;   
 }
@@ -27,7 +28,7 @@
     background-color: #ffffff;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1439px) {
 
     .punto{
         width: 8px;

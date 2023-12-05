@@ -1,34 +1,59 @@
 .headerConteiner {
-  padding: 14px, 0px, 14px, 0px;
-  margin: 34px;
-  margin-top: 14px;
+  display: grid;
+  width: 100%;
+  max-width: 1440px;
+  max-height: 121px;
+  padding: 14px 0px 14px 0px;
+  gap: 34px;
 }
 
 .topConteiner {
+  /* width: 100%; */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: auto;
+  max-height: 40px;
+  padding: 0 70px;
+  gap: 229px;
 }
-
-.topRightConteiner {
+ .topRightConteinerHeader{
   display: flex;
+  gap: 240px;
+  width: 100%;
+  max-width: 906px;
+  height: auto;
+  max-height: 40px;
+  align-items: center;
+ }
+
+ .topRightConteiner {
+   display: flex;
+   width: 100%;
+   max-width: 151px;
+   height: auto;
+   max-height: 22px;
+   gap: 32px;
+ }
+
+ .profileConteiner {
+  display: flex;
+  width: 100%;
+   max-width: 97%;
+   height: auto;
+   max-height: 22px;
+   gap: 8px;
+   align-items: center;
+
 }
 
 .searchConteiner {
   display: flex;
   max-width: 515px;
   width: 100%;
-  height: 40px;
+  max-height: 40px;
   border: 1px solid #bababa;
   border-radius: 48px;
   justify-content: end;
-}
-
-.searchConteiner input,
-button {
-  border: 0px;
-  background-color: transparent;
-}
+} 
 
 .searchConteiner input {
   width: 100%;
@@ -41,13 +66,11 @@ button {
   padding: 12px;
 }
 
-.profileConteiner {
-  display: flex;
-}
-
 .bottomConteiner {
   display: flex;
   justify-content: flex-end;
+  padding: 0px 70px 0px 0px;
+  gap:24px;
 }
 
 .headerCategoryConteiner {
@@ -57,12 +80,12 @@ button {
 
 .headerTitle {
   font-family: "Roboto";
-  font-size: 32px;
-  font-style: italic;
-  font-weight: 800;
-  line-height: 38px;
-  letter-spacing: 0.1em;
-  text-align: left;
+font-size: 31px;
+font-style: italic;
+font-weight: 800;
+line-height: 38px;
+letter-spacing: 0.1em;
+text-align: left;
   color: #0f1e7b;
 }
 
@@ -74,9 +97,6 @@ button {
   letter-spacing: 0em;
   text-align: center;
   color: #5e5e5e;
-  padding: 3px;
-  margin-left: 4px;
-  margin-right: 30px;
 }
 
 .headerCategoryTitle {
@@ -89,7 +109,6 @@ button {
   color: #5e5e5e;
   text-decoration: none;
   transition: transform 300ms ease-in-out;
-  margin: 24px 15px 12px;
 }
 
 .headerCategoryConteiner:hover {

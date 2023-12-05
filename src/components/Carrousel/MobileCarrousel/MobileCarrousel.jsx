@@ -4,12 +4,15 @@ import { mobileProducts } from "../../../data/carousel";
 import useCarrouselState from "../../../customsHooks/useCarrouselState";
 import { MobileCarrouselCard } from "../CarrouselCard/MobileCarrouselCard";
 
-export const MobileCarrousel = ({ conteinerStyle, title, titleStyle, liStyle, classNameLiActive }) => {
+export const MobileCarrousel = ({ conteinerStyle, title, titleStyle, liStyle, classNameLiActive, backGround }) => {
   const { translateValue, activeIndex, handleClick } = useCarrouselState();
 
   const puntos = [0, -20.5, -40.5, -60.5];
 
+
   return (
+    <div style={backGround} className="backColorMobile">
+
     <div style={conteinerStyle} className="mobileCarrouselConteiner">
       <h1 style={titleStyle} className="mobileCarrouselTitle">
         {title}
@@ -32,5 +35,6 @@ export const MobileCarrousel = ({ conteinerStyle, title, titleStyle, liStyle, cl
         ))}
       </ul>
     </div>
+            </div>
   );
 };

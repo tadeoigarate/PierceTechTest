@@ -10,25 +10,26 @@ const TRANSITION_DURATION = 500;
 const SLIDE_OFFSET = -17.15;
 
 // eslint-disable-next-line react/prop-types
-export const DesktopCarrousel = ({ conteinerStyle, title, titleStyle }) => {
+export const DesktopCarrousel = ({ conteinerStyle, title, titleStyle, backGround }) => {
   const { slideshow, siguiente, anterior } = useSlideshow(
     TRANSITION_DURATION,
     SLIDE_OFFSET
   );
 
   return (
+    <div style={backGround} className="backColor">
     <div style={conteinerStyle} className="desktopCarrouselConteiner">
       <h1 style={titleStyle} className="title">
         {title}
       </h1>
-      <div className="buttonConteiner">
-        <button onClick={anterior} className="previusNextButton">
-          <img src={previusIcon} alt="" />
+      {/* <div className="buttonConteiner">
+        <button  className="previusNextButton">
+          <img onClick={anterior} src={previusIcon} alt="" />
         </button>
-        <button onClick={siguiente} className="previusNextButton">
-          <img src={nextIcon} alt="" />
+        <button  className="previusNextButton">
+          <img onClick={siguiente} src={nextIcon} alt="" />
         </button>
-      </div>
+      </div> */}
       <div className="cardsConteinerBig">
         <div className="cardsConteiner" ref={slideshow}>
           {products.map((elem, index) => (
@@ -36,6 +37,7 @@ export const DesktopCarrousel = ({ conteinerStyle, title, titleStyle }) => {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };

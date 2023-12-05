@@ -22,8 +22,8 @@ export const HeaderMobile = () => {
         <button onClick={handleMenuClick}>
           <img src={menuIcon} alt="" />
         </button>
-        <div style={{ display: "flex" }}>
           <h1 className="hearderMobileTitle">Mi Tienda</h1>
+        <div style={{ display: "flex" }}>
           <div className="iconConteiner">
             <img className="icon" src={profileIcon} alt="Profile icon" />
             <img className="icon" src={cartIcon} alt="CartShoping icon" />

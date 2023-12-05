@@ -1,7 +1,7 @@
 .popularCategoryConteiner {
   display: flex;
   flex-direction: column;
-  Padding: 80px 70px 0px ;
+  margin-top: 80px;
   align-items: center;
 }
 
@@ -27,13 +27,13 @@ margin-bottom: 24px;
   height: 399px;
   width: 316.22px;
   background-color: #bf2a2f ;
-  margin-right: 13px;
+  margin-right: 11.71px;
   align-items: flex-end;
 }
 
 .bigCategory:last-child {
   margin-right: 0;
-  margin-left: 13px;
+  margin-left: 11.71px;
 }
 
 .bigCategory , .smallCategory  {
@@ -44,9 +44,10 @@ margin-bottom: 24px;
 .smallCategory {
   display: flex;
   width: 644.14px;
-  height: 193px;
+  max-height: 193px;
+  height: 100%;
   background-color: #bf2a2f;
-  margin-bottom: 13px;
+  margin-bottom: 11.71px;
   align-items: flex-end;
 }
 
