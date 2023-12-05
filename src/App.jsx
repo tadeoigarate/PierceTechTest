@@ -13,17 +13,3 @@ function App() {
 }
 
 export default App
-
-// function App() {
-//   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-//   return (
-//     <div>
-//       {isMobile ? (
-//         <div>Estás usando un dispositivo móvil</div>
-//       ) : (
-//         <div>Estás usando un navegador de escritorio</div>
-//       )}
-//     </div>
-//   );
-// }
