@@ -1,20 +1,66 @@
-# Technical Test for Pierce Ecommerce
+# Project Structure
 
-This repository contains my work for the technical test for Pierce Ecommerce. The main objective of the project is to create a layout from a design provided through Figma.
+This project is organized in a structured manner to keep the code and assets well-arranged:
 
-## Requirements
+```
+src/
+|── assets/
+|   ├── icons/ # SVG icons
+|   └── images/ # PNG and JPG images
+|
+|── components/ # Reusable components
+|
+|── customHooks/ # Custom hooks for specific functionalities
+|   ├── useCarouselState.js # Custom hook for carousel state management
+|   └── useSlideshow.js # Custom hook for slideshow functionality
+|
+|── data/ # Data files for information used in components
+|   ├── carousel.js # Array of products for the carousel
+|   ├── headerData.js # Array of categories for the header
+|   ├── mobileCategory.js # Array of categories for the mobile component
+|   └── topFooter.js # Data for the top footer
+|
+└── screens/ # Screens where components are assembled for the final result
+```
 
-The requirements for this project are as follows:
+## Components
 
-- Respect the margins between the modules established in the Figma design.
-- The design must be responsive. Designs for both Mobile and Desktop are provided.
-- Use the colors established in Figma.
+### HomeScreen
 
-## Technologies Used
+The main component for the home screen.
 
-For this project, I used `create-vite@latest` with React as the framework. The project was developed using only HTML, CSS, and JavaScript.
+#### Props
 
-## How to Start the Project
+- None
+
+### Banner
+
+The banner component for displaying images.
+
+#### Props
+
+- `bannerImage`: The image source for the banner.
+
+### DesktopCarousel
+
+The desktop carousel component for displaying items.
+
+#### Props
+
+- `title`: The title of the carousel.
+- `backGround`: The background style for the carousel container.
+
+### MobileCarousel
+
+The mobile carousel component for displaying items.
+
+#### Props
+
+- `title`: The title of the carousel.
+- `classNameLiActive`: The class name for the active list item.
+- `backGround`: The background style for the carousel container.
+
+# How to Start the Project
 
 To start the project, follow these steps:
 
