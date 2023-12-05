@@ -1,0 +1,106 @@
+.mobileCarrouselConteiner {
+  margin: 32px 0;
+  background-color: #dc1e0f;
+}
+
+.mobileCarrouselTitle {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+  padding: 16px 0 16px 16px;
+}
+
+.cardsMobileConteiner {
+  max-width: 360px;
+  overflow: hidden;
+}
+
+.grande {
+  height: auto;
+  width: 243%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  transition: all 0.5s ease;
+  transform: translateX(-33%);
+}
+
+.cardConteinerMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+  width: 160px;
+  height: 233px;
+  box-shadow: 0px 2px 6px 0px #cccaca;
+  border-radius: 15px;
+  margin: 10px 0px;
+}
+
+.cardConteinerMobile:first-child{
+  margin-left: 16px;
+}
+
+.mobile img {
+  width: 99.35px;
+  height: 99.55px;
+}
+
+.mobile h1 {
+  font-family: "Roboto-Flex";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.mobile p {
+  font-family: "Roboto-Flex";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.mobile button {
+  font-family: "EncodeSans";
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0px;
+  text-align: center;
+  height: 16px;
+  width: 58px;
+}
+
+.carrouselPuntos {
+  padding: 16px 0 16px 16px;
+  display: flex;
+  list-style: none;
+  width: calc(100% - 16px);
+  justify-content: center;
+}
+
+.carrouselPunto {
+  width: 8px;
+  height: 8px;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  border: 1.5px solid #ffffff;
+  margin-right: 21px;
+}
+
+.activeRed{
+  background-color: #dc1e0f;
+}

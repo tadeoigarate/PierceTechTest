@@ -1,0 +1,110 @@
+.desktopCarrouselConteiner {
+  margin-top: 80px;
+  background-color: #dc1e0f;
+  height: 566px;
+  position: relative;
+  Padding: 0px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 32px;
+    text-align: left;
+    color: #FFFFFF;
+    }
+
+.buttonConteiner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  right: 0px;
+}
+.cardsConteinerBig {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 80px);
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+.previusNextButton {
+  border: none;
+  background: none;
+  user-select: none;
+}
+
+.previusNextButton img{
+  cursor: pointer;
+  user-select: none;
+}
+
+.cardConteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    width: 246px;
+    height: 402px;
+    box-shadow: 0px 2px 6px 0px #CCCACA;
+    border-radius: 6px;
+}
+
+.titleCard {
+    font-family: "Roboto-Flex";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #5e5e5e;
+    max-width: 212px;
+}
+
+
+.cardConteiner img {
+  width: 188px;
+  height: 188px;
+} 
+
+.priceCard {
+  font-family: "Roboto-Flex";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.13px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.buttonCard {
+  border: #dc1e0f 1px solid;
+  font-family: "Encode Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #dc1e0f;
+  background-color: transparent;
+  height: 33px;
+  width: 117px;
+  border-radius: 20px;
+}
+
+.cardsConteiner {
+  height: auto;
+  width: 120.5%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-left: 3px;
+}
