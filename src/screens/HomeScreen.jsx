@@ -16,11 +16,11 @@ import { TopFooterMobile } from "../components/TopFooter/TopFooterMobile";
 import { FooterMobile } from "../components/Footer/FooterMobile";
 
 export const HomeScreen = () => {
-  const [desktop, setDesktop] = useState(window.innerWidth > 768);
+  const [desktop, setDesktop] = useState(window.innerWidth > 1440);
 
   useEffect(() => {
     const handleResize = () => {
-      setDesktop(window.innerWidth > 768);
+      setDesktop(window.innerWidth > 1440);
     };
 
     window.addEventListener("resize", handleResize);
